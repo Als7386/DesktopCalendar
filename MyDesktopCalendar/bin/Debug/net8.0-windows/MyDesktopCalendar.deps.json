@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MyDesktopCalendar/1.0.0": {
+        "runtime": {
+          "MyDesktopCalendar.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyDesktopCalendar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
