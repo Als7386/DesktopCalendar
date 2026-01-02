@@ -271,9 +271,7 @@ namespace MyDesktopCalendar
             {
                 WindowInteropHelper wih = new WindowInteropHelper(this);
                 SendMessage(wih.Handle, 0x112, (IntPtr)0xF008, IntPtr.Zero);
-
-                // [추가된 코드] ★★★ 중요 ★★★
-                // 이벤트를 여기서 끝냄 (윈도우의 DragMove로 넘어가지 않게 막음)
+                // 윈도우의 DragMove로 넘어가지 않게 막음
                 e.Handled = true;
             }
         }
@@ -282,4 +280,5 @@ namespace MyDesktopCalendar
         [DllImport("user32.dll")]
         private static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
     }
+
 }
